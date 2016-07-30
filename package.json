@@ -1,0 +1,17 @@
+{
+  "name": "pari-tour-portal",
+  "description": "A web portal which allows non-technical PARI volunteers to maintain the database which powers the tour application.",
+  "version": "0.0.0",
+  "author": "Noah Wolfe",
+  "contributors": [ "Noah Wolfe <noahwolfe1999@gmail.com> (https://github.com/noahewolfe)" ],
+  "scripts": { "start": "node --harmony app.js" },
+  "dependencies": {
+    "express": "4.x",
+    "ejs": "*",
+    "mongoose": "*",
+    "body-parser": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
