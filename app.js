@@ -16,6 +16,7 @@ mongoose.connect(configDB.url);
 // setting up body-parser to let us access req.body information
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use('/uploads', express.static(__dirname + "/uploads"));
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');

@@ -9,7 +9,9 @@
     "express": "4.x",
     "ejs": "*",
     "mongoose": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "gridfs-stream": "*",
+    "multer": "*"
   },
   "devDependencies": {
     "nodemon": "*"

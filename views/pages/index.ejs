@@ -1,15 +1,19 @@
-<% include ../partials/head.ejs %>
-
-<p>Welcome to the PARI Tour Application Webportal!</p>
-<p>New location test</p>
-<form action="/" method="post">
-    Name:<br>
-    <input type="text" name="name"><br>
-    Description:<br>
-    <input type="text" name="description"><br>
-    Coordinates:<br>
-    <input type="text" name="coordinates"><input type="text" name="coordinates"><br>
-    Image:<br>
-    <input type="text" name="images"><br>
-    <input type="submit" value="Submit">
-</form>
+<head>
+    <% include ../partials/head.ejs %>
+    <script src="../../public/js/add-form-on-press.js"></script>
+</head>
+<body>
+    <p>Welcome to the PARI Tour Application Webportal!</p>
+    <p>Add a new location</p>
+    <form action="/" method="post" enctype="multipart/form-data">
+        Name:<br>
+        <input type="text" name="name"><br>
+        Description:<br>
+        <input type="text" name="description"><br>
+        Coordinates:<br>
+        <input type="text" name="coordinates"><input type="text" name="coordinates"><br>
+        Image:<br>
+        <input type="file" name="images">
+        <input type="submit" value="Submit">
+    </form>
+</body>
